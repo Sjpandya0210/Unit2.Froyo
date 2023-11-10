@@ -30,14 +30,15 @@ const flavors = prompt(
   console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
   */
 
-  const orderSummary = {
-        vanilla : 0,
-        strawberry : 0,
-        coffee: 0
-  }
+ 
 
 
 function countFlavors(anyArray) {
+    const orderSummary = {
+        vanilla : 0,
+        strawberry : 0,
+        coffee: 0
+  };
     for (let i = 0; i < anyArray.length; i++){
      if (anyArray[i] === "vanilla") {
         //console.log(anyArray[i] = "vanilla")
@@ -50,8 +51,15 @@ function countFlavors(anyArray) {
         orderSummary.coffee++
      }
         }
-        console.log(`You ordered ${orderSummary.vanilla} vanilla froyos,${orderSummary.strawberry} strawberry froyos and ${orderSummary.coffee} coffee froyos`);
+        console.log(orderSummary);
     }
     
     countFlavors(arrayOfFlavors);
+
+
+   
+
+    
+    
+
 
